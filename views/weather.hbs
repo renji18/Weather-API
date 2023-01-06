@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headData}}
+  <title>Search Location</title>
+</head>
+<body>
+  {{>header}}
+  <form method="get">
+    <input name="city" id="city" type="text">
+    <button type="submit">Search Location</button>
+  </form>
+
+  <div id="main-weather-info-card">
+    <p>{{MESSAGE}}</p>
+    <p>{{CITY}}</p>
+    <p>{{TEMP}}</p>
+    <p>{{COND}}</p>
+  </div>
+
+  {{>footer}}
+</body>
+</html>
